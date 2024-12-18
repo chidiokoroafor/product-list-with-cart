@@ -20,7 +20,7 @@ const Modal = () => {
                               <img className='size-10 rounded-md' src={order.image.desktop} alt="" />
                               <div className='text-sm'>
                                   <h3 className='text-Rose-900 font-[500]'>{order.name} </h3>
-                                  <p className='text-xs'> <span className='text-Red'>{order.quantity}x </span> <span>@ ${order.price }</span></p>
+                                  <p className='text-xs'> <span className='text-Red'>{order.quantity}x </span> <span>@ ${order.price.toPrecision(3) }</span></p>
                               </div>
                           </div>
                           <p>${order.totalAmount.toPrecision(4)} </p>
@@ -28,10 +28,9 @@ const Modal = () => {
                         </div>
                   })}
                 <div className='flex justify-between items-center p-4'>
-                      <p className='text-sm'>Order Total</p>
-                      <p className='font-bold text-lg'>${orderTotal.toPrecision(4)} </p>
-                  </div>
-                 
+                    <p className='text-sm'>Order Total</p>
+                    <p className='font-bold text-lg'>${orderTotal.toPrecision(4)} </p>
+                </div>
               </div>
 
               <button
@@ -41,8 +40,6 @@ const Modal = () => {
                     }}
                   className='bg-Red text-white py-3 w-full rounded-3xl mt-6'>
                   Start New Order</button>
-
-
           </div>
           
     </div>
