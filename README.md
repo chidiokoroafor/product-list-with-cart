@@ -15,7 +15,7 @@ Users should be able to:
 
 ### Links
 
-- Solution: [Solution](https://your-solution-url.com)
+- Solution: [Solution]https://www.frontendmentor.io/solutions/product-list-with-cart-with-react-typescript-redux-tool-tailwind-css--n6ZlzlO-c)
 - Live Site: [Live site](https://product-list-with-cart-delta-mauve.vercel.app/)
 
 ### Built with
